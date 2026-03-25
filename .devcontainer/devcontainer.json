@@ -16,5 +16,6 @@
         "GitHub.vscode-github-actions"
       ]
     }
-  }
+  },
+"updateContentCommand": "echo 'export GITHUB_TOKEN=\"${NPM_PAT}\"' >> ~/.bashrc"
 }
