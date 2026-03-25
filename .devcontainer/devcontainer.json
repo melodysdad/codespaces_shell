@@ -1,6 +1,6 @@
 {
   "name": "codespaces-shell",
-  "remoteEnv": {
+  "containerEnv": {
     "GITHUB_TOKEN": "${localEnv:NPM_PAT}"
   },
   "features": {
