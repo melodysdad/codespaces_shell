@@ -1,8 +1,5 @@
 {
   "name": "codespaces-shell",
-  "containerEnv": {
-    "GITHUB_TOKEN": "${localEnv:NPM_PAT}"
-  },
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "nodeGypDependencies": true,
@@ -17,5 +14,5 @@
       ]
     }
   },
-"updateContentCommand": "echo 'export GITHUB_TOKEN=\"${NPM_PAT}\"' >> ~/.bashrc"
+  "onCreateCommand": "grep -q 'export GITHUB_TOKEN' ~/.bashrc || echo 'export GITHUB_TOKEN=\"$NPM_PAT\"' >> ~/.bashrc"
 }
