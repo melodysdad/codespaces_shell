@@ -1,0 +1,20 @@
+{
+  "name": "codespaces-shell",
+  "remoteEnv": {
+    "GITHUB_TOKEN": "${localEnv:NPM_PAT}"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "version": "lts"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "GitHub.vscode-github-actions"
+      ]
+    }
+  }
+}
