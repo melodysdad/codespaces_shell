@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../github-webhook"
+		},
+		{
+			"path": "../github-event-processor"
+		}
+	],
+	"settings": {}
+}

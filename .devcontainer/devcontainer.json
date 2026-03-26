@@ -14,5 +14,5 @@
       ]
     }
   },
-  "onCreateCommand": "grep -q 'export GITHUB_TOKEN' ~/.bashrc || echo 'export GITHUB_TOKEN=\"$NPM_PAT\"' >> ~/.bashrc"
+  "onCreateCommand": "grep -q 'export GITHUB_TOKEN' ~/.bashrc || echo 'export GITHUB_TOKEN=\"$NPM_PAT\"' >> ~/.bashrc && npm install -g @anthropic-ai/claude-code"
 }
